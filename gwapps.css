@@ -1,0 +1,281 @@
+*{
+    margin: 0
+}
+
+header{
+    height: 50px;
+    border-bottom: 1px solid #cccccc;
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    margin: auto 0;
+    height: 100%;
+    width: 74px;
+    background: url(https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#applist{
+    display: grid;
+    margin-top: 25px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 10px;
+}
+
+.button{
+    position: relative;
+    padding: 2px;
+    box-shadow: 1px 1px 3px -2px black;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.button:hover{
+    box-shadow: 3px 3px 0px -4px black;
+    transform: scale(0.98) rotate(0.1deg);
+}
+
+.button .shadow-inset{
+    position: absolute;
+    box-shadow: 1px 1px 5px -3px black inset;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transition: all 0.5s;
+    z-index: 10;
+}
+
+.button .shadow-inset:hover{
+    opacity: 1;
+}
+
+.title{
+    display: block;
+    text-align: center;
+}
+
+.icon{
+    background-image: url('https://ssl.gstatic.com/gb/images/p1_a4fff491.png');
+    height: 64px;
+    width: 64px;
+    display: block;
+    margin: auto;
+}
+
+
+
+#search{
+    margin: 0 0 25px 0;
+    border-bottom: 1px solid #ddd;
+    padding: 25px 0;
+    box-shadow:
+               0 -15px 10px -10px #eee inset,
+               0 15px 10px -10px #eee inset,
+               0 0 0px -5px #ddd,
+               0 0 2px -5px #ddd;
+}
+
+.search{
+    position: relative;
+    text-align: center;
+    width: 460px;
+    height: 39px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 24px;
+}
+
+.search .loup{
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    color: #9a9a9a;
+    cursor: pointer;
+    fill: currentColor;
+    top: 8px;
+    left: 8px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.search .loup:hover{
+    background: #ddd;
+}
+
+.search .loup svg {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.search input{
+    border: none;
+    position: absolute;
+    height: 30px;
+    width: 88%;
+    left: 40px;
+    top: 3px;
+    font-size: 20px;
+}
+
+.search input:focus{
+    outline: none;
+}
+
+.search .clean{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    z-index: 10;
+    border-radius: 5px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.search .clean:hover{
+    background: #ddd;
+}
+
+.search .clean:after{
+    position: absolute;
+    right: 0px;
+    top: 9px;
+    content: '';
+    width: 20px;
+    height: 2px;
+    border-radius: 2px;
+    background: #888;
+    z-index: 10;
+    transform: rotate(45deg);
+}
+
+.search .clean:before{
+    position: absolute;
+    right: 0px;
+    top: 9px;
+    content: '';
+    width: 20px;
+    height: 2px;
+    border-radius: 2px;
+    background: #888;
+    z-index: 10;
+    transform: rotate(-45deg);
+}
+
+
+
+
+#translator{
+    grid-column: 2/3 ;
+    grid-row: 1/2;
+}
+
+#gdrive{
+    grid-column: 3/4 ;
+    grid-row: 1/2;
+}
+
+#gmail{
+    grid-column: 4/5 ;
+    grid-row: 1/2;
+}
+
+#photo{
+    grid-column: 5/6 ;
+    grid-row: 1/2;
+}
+
+#gplay{
+    grid-column: 7/8 ;
+    grid-row: 1/2;
+}
+
+#calendar{
+    grid-column: 2/3 ;
+    grid-row: 2/3;
+}
+
+#documents{
+    grid-column: 3/4 ;
+    grid-row: 2/3;
+}
+
+#tables{
+    grid-column: 4/5 ;
+    grid-row: 2/3;
+}
+
+#presentations{
+    grid-column: 5/6 ;
+    grid-row: 2/3;
+}
+
+#gmaps{
+    grid-column: 6/7 ;
+    grid-row: 2/3;
+}
+
+#gkeep{
+    grid-column: 6/7 ;
+    grid-row: 1/2;
+}
+
+#gfonts{
+    grid-column: 7/8 ;
+    grid-row: 2/3;
+}
+
+#translator .icon{
+    background-position: 0 -2208px;
+}
+
+#gdrive .icon{
+    background-position: 0 -138px;
+}
+
+#photo .icon{
+    background-position: 0 calc(0px - 64px*9 - 5px*9);
+}
+
+#documents .icon{
+    background-position: 0 calc(0px - 64px*29 - 5px*29);
+}
+
+#gkeep .icon{
+    background-image: url('https://ssl.gstatic.com/gb/images/a/911e3628e6.png');
+}
+
+#tables .icon{
+    background-position: 0 calc(0px - 64px*36 - 5px*36);
+}
+
+#presentations .icon{
+    background-position: 0 calc(0px - 64px*4 - 5px*4);
+}
+
+#gplay .icon{
+    background-position: 0 calc(0px - 64px*13 - 5px*13);
+}
+
+#gmaps .icon{
+    background-position: 0 calc(0px - 64px*25 - 5px*25);
+}
+
+#gmail .icon{
+    background-position: 0 calc(0px - 64px*7 - 5px*7)
+}
+
+#calendar .icon{
+    background-position: 0 calc(0px - 64px*35 - 5px*35);
+}
+
+#gfonts .icon{
+    background-image: url('gfonts.png');
+}
