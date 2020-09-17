@@ -23,6 +23,8 @@ header{
     margin-top: 25px;
     grid-template-columns: repeat(8, 1fr);
     grid-gap: 10px;
+    padding-bottom: 25px;
+    border-bottom: 1px dashed #ddd;
 }
 
 .button{
@@ -64,7 +66,7 @@ header{
     height: 64px;
     width: 64px;
     display: block;
-    margin: auto;
+    margin: 0 auto;
 }
 
 
@@ -278,4 +280,52 @@ header{
 
 #gfonts .icon{
     background-image: url('gfonts.png');
+}
+
+#other{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
+    margin: 0 100px;
+}
+
+#other .button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    height: 150px;
+    box-shadow: 3px 3px 5px;
+}
+
+#other .button:hover{
+    transform: scale(0.99);
+    box-shadow: none;
+}
+#regex.button .shadow-inset{
+    box-shadow: 1px 1px 5px 1px black inset;
+}
+#youtube.button .shadow-inset{
+    box-shadow: 1px 1px 5px -1px black inset;
+}
+#youtube .icon{
+    background: none;
+}
+
+#youtube{
+    background: url('youtube.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 280px;
+}
+
+#regex .icon{
+    background: none;
+}
+
+#regex{
+    background: url('regex.png') #457abb;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 280px;
 }
