@@ -1,5 +1,7 @@
 ====================regex====================
 (.*?nillkizz\.github\.io\/googleApps\/.*)|(.*?regex101\.com\/.*)|(.*?youtube\.com\/.*)|(.*?translate\.google\.ru\/.*)|(.*?drive\.google\.com\/.*)|(.*?photos\.google\.com\/.*)|(.*?mail\.google\.com\/.*)|(.*?keep\.google\.com\/.*)|(.*?play\.google\.com\/store\/apps.*)|(.*?calendar\.google\.com\/.*)|(.*?docs\.google\.com\/document\/.*)|(.*?docs\.google\.com\/spreadsheets\/.*)|(.*?docs\.google\.com\/presentation\/.*)|(.*?google\.com\/maps\/.*)|(.*?fonts\.google\.com\/.*)
+--------------------comand--------------------
+nativefier 'https://nillkizz.github.io/googleApps/' --name GoogleWebApp --maximize --internal-urls "(.*?nillkizz\.github\.io\/googleApps\/.*)|(.*?regex101\.com\/.*)|(.*?youtube\.com\/.*)|(.*?translate\.google\.ru\/.*)|(.*?drive\.google\.com\/.*)|(.*?photos\.google\.com\/.*)|(.*?mail\.google\.com\/.*)|(.*?keep\.google\.com\/.*)|(.*?play\.google\.com\/store\/apps.*)|(.*?calendar\.google\.com\/.*)|(.*?docs\.google\.com\/document\/.*)|(.*?docs\.google\.com\/spreadsheets\/.*)|(.*?docs\.google\.com\/presentation\/.*)|(.*?google\.com\/maps\/.*)|(.*?fonts\.google\.com\/.*)"
 -------------------examples-------------------
 https://nillkizz.github.io/googleApps/
 https://regex101.com/
